@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIP BOARD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="content_section">
+                <div class="getdata">
+                    <div class="get">
+                        <input type="text" id="id" placeholder="msg id" autocomplete="off">
+                        <button class="button ">GET</button>
+                    </div>
+                    <div id="msg_content"></div>
+                    <div class="copy_button"><button class="copy">COPY</button></div>
+                </div>
+                <div class="insert_data">
+                    <div class="input_section">
+                        <div class="hedding">
+                            <h2>INSERT YOUR DATA</h2>
+                        </div>
+                        <div class="msdid">
+                            <H6>MSG ID : <span id="insert_msgid">____</span>
+                            </H6>
+                        </div>
+                        <div class="textarea">
+                            <textarea name="content" id="content" cols="43" rows="10"></textarea>
+                        </div>
+                        <div class="add">
+                            <button class="insert button_active">INSERT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create"><button class="create_new ">INSERT</button></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

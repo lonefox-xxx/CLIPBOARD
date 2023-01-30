@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    /* transform: translateY(10px); */
+}
+
+.content_section {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.flipcard {
+    transform: rotateY(180deg);
+}
+
+.getdata {
+    width: 400px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 9px;
+}
+
+.insert_data {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 50%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    background: #fafafa;
+    /* color: #333;
+    text-align: center; */
+}
+
+/* .inputarea {
+    width: 400px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 9px;
+} */
+
+
+#msg_content {
+    height: 50%;
+    width: 85%;
+    border: 2px black solid;
+    padding: 10px;
+    transform: translateY(40px);
+    overflow: scroll;
+}
+
+.get {
+    width: 400px;
+    height: auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.msgid {
+    width: 60%;
+    height: auto;
+    transform: translateX(-49px);
+}
+
+#id {
+    border: none;
+    outline: none;
+    border-bottom: 2px #000 solid;
+    width: 40%;
+    height: 30px;
+    transform: translateX(-29px);
+    padding: 0px 0 0px 3px;
+}
+
+
+
+.button {
+    /* transform: translateX(280px); */
+    width: 25%;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(240, 51, 51);
+    font-family: tahoma;
+}
+
+.button_active {
+    background-color: rgb(245, 122, 122);
+}
+
+.copy_button {
+    transform: translateY(45px);
+    width: 100%;
+}
+
+.copy {
+    width: 25%;
+    height: 30px;
+    border: none;
+    outline: none;
+    transform: translateX(270px);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(240, 51, 51);
+    font-family: tahoma;
+
+}
+
+.copy_active {
+    background-color: rgb(85, 202, 85);
+}
+
+.create {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(20px);
+}
+
+.create_new {
+    width: 50%;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(240, 51, 51);
+    font-family: tahoma;
+    letter-spacing: 1px;
+    transform: translateY(220px);
+}
+
+.input_section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hedding {
+    width: 100%;
+    height: auto;
+    columns: #000;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-10px);
+}
+
+.hedding h2 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: tahoma;
+}
+
+.msdid {
+    width: 100%;
+    height: auto;
+    transform: translateY(8px);
+    padding: 25px;
+}
+
+.msdid h6 {
+    font-size: 15px;
+    font-weight: 800;
+    /* letter-spacing: 1px; */
+    font-family: tahoma;
+}
+
+.msdid span {
+    letter-spacing: 3px;
+}
+
+.textarea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea textarea {
+    padding: 15px;
+    border: 2px #000 solid;
+    border-radius: 7px;
+}
+
+.textarea textarea:focus {
+    outline: none;
+}
+
+.add {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transform: translateY(15px);
+}
+
+.add button {
+    width: 60%;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    background-color: rgb(240, 51, 51);
+}
